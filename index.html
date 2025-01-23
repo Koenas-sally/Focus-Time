@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Focus Time</h1>
+
+    <!-- Timer Display -->
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+
+    <!-- Customizable Durations Section -->
+    <div class="settings">
+      <label>
+        Work Duration: 
+        <input id="work-duration" type="number" value="25" min="1">
+      </label>
+      <label>
+        Break Duration: 
+        <input id="break-duration" type="number" value="5" min="1">
+      </label>
+      <button id="save-settings-btn">Save Settings</button>
+    </div>
+    <b></b>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn">Pause</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <!-- Sound Alerts -->
+    <audio id="alert-sound" src="alert.mp3" preload="auto"></audio>
+    <button id="mute-btn">Mute</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
